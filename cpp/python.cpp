@@ -2,7 +2,7 @@
  * @file python.cpp
  * @author Carl Edwards
  * 
- * Python bindings for Merlin using pybind11.
+ * Python bindings using pybind11 and the TMS1100 C++ library.
  * 
  * Compiling the Merlin library Mac:
  *   /usr/bin/clang++ -shared -std=c++2a -undefined dynamic_lookup 

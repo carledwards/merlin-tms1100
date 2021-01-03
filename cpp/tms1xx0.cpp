@@ -2,7 +2,7 @@
  * @file tms1xx0.cpp
  * @author Carl Edwards
  * 
- * Python port of Milton Bradley's Merlin Electronic Game emulator
+ * C++ port of Milton Bradley's Merlin Electronic Game emulator
  *
  * This was inspired and ported from the work done by Dominic Thibodeau (hotkeysoft).
  * https://github.com/hotkeysoft/emulators/tree/master/TMS1000
