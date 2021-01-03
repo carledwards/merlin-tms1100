@@ -89,7 +89,7 @@ def cpu_o_output_cb(o_value):
     print(g_term.move_yx(SOUND_POSITION[0], SOUND_POSITION[1]) + g_term.white(SOUND_ON))
 
 
-def cpu_k_input_cb(o_reg, op_code):
+def cpu_k_input_cb(o_reg):
   """ called by the CPU for providing the hardware user input """
   # pylint: disable = too-many-branches, global-statement
   global g_input_key, g_input_key_count

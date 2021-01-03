@@ -348,13 +348,13 @@ class TMS1100:
 
   def _op_knez(self, op_code, _last_status):
     if self._k_reg_input_cb:
-      self._cpu.reg_k = _set4(self._k_reg_input_cb(self._cpu.reg_o & 0xFF, op_code) & 0x0F)
+      self._cpu.reg_k = _set4(self._k_reg_input_cb(self._cpu.reg_o & 0xFF) & 0x0F)
     self._cpu.reg_s = _set4(self._cpu.reg_k) != 0
 
   def _op_tka(self, op_code, _last_status):
     # CKP, AUTA
     if self._k_reg_input_cb:
-      self._cpu.reg_k = _set4(self._k_reg_input_cb(self._cpu.reg_o & 0xFF, op_code) & 0x0F)
+      self._cpu.reg_k = _set4(self._k_reg_input_cb(self._cpu.reg_o & 0xFF) & 0x0F)
     self._cpu.reg_a = _set4(self._cpu.reg_k)
 
   def _op_tdo(self, _op_code, _last_status):
